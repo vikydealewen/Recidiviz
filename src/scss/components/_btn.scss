@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 80px;
+  padding: 17px 33px;
+  font-weight: 400;
+  font-size: var(--main-size);
+  line-height: 20px;
+  text-align: center;
+  color: var(--ligh-color);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+
+  &:focus-visible {
+    border-color: var(--active-color);
+  }
+
+  &:active {
+    border-color: var(--active-color);
+    background-color: var(--active-color);
+  }
+}
